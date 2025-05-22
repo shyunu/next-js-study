@@ -25,7 +25,7 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
 };
 
 export default function Page({ book }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  if (!book) return "문제가 발생했습니다. 다시 시도해주세요";
+  if (!book) return "문제가 발생했습니다. 다시 시도해주세요!";
 
   const { id, title, subTitle, description, author, publisher, coverImgUrl } = book;
 
