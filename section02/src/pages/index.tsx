@@ -11,11 +11,13 @@ import fetchRandomBooks from "@/lib/fetch-random-books";
 
 export const getStaticProps = async () => {
   console.log("인덱스 페이지");
-  
+
   const [allBooks, recoBooks] = await Promise.all([fetchBooks(), fetchRandomBooks()]);
 
   return {
     props: { allBooks, recoBooks },
+    // revalidate: 3,
+    
   };
 };
 
