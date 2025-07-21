@@ -6,6 +6,7 @@ import { delay } from "@/util/delay";
 import { Suspense } from "react";
 import BookItemSkeleton from "@/components/skeletom/book-item-skeleton";
 import BookListSkeleton from "@/components/skeletom/book-list.skeleton";
+import { Metadata } from "next";
 
 // 특정 페이지의 유형을 강제로 Static, Dynamic 페이지로 설정하는 옵션
 // 1. auto : 기본값으로, 아무것도 강제하지 않는다.
@@ -51,6 +52,17 @@ async function RecoBooks() {
 }
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "shyunu's books",
+  description: "shyunu's books에 등록된 도서를 만나보세요",
+  openGraph: {
+    title: "shyunu's books",
+    description: "shyunu's books에 등록된 도서를 만나보세요",
+    images: ["/thumbnail.png"],
+  },
+};
+
 export default function Home() {
   return (
     <div className={style.container}>
