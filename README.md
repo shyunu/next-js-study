@@ -1,6 +1,6 @@
 # 📘 Next.js 개념 정리
 
-> by 수현  
+> by shyunu
 > https://shyunu.tistory.com/category/📍%20프로그래밍%20언어/Next.js  
 
 ---
