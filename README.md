@@ -107,3 +107,5 @@
 
 - 이미지 최적화로 웹페이지 용량 줄이기  
   ( https://shyunu.tistory.com/107 )
+- 검색 엔진 최적화(SEO) – 메타데이터 설정  
+  ( https://shyunu.tistory.com/108 )
